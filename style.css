@@ -109,6 +109,7 @@ div.logo > img {
             margin-top: auto;
         }
         header {
+            width: 100vw;
             height: 250px;
         }
         
@@ -117,6 +118,32 @@ div.logo > img {
             height: calc(60vh - 250px);
             margin: 20px;
             
+        }
+        main {
+            
+            width: 70vw;
+            height: 100vh;
+            background-color: white;
+            margin-left: 20px;
+            margin-right: 0px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .map {
+            width: 70vw;
+            max-width: 70vw;
+            height: 450px;
+
+            padding: 2px;
+            
+            display: relative;
+        }
+
+        iframe {
+            width: 65vw;
+            max-width: 70vw; 
+            margin: auto;
         }
     }
 
