@@ -20,8 +20,10 @@
 
 
     body  {
-        background-color: #F2E6CE;
        display: block;
+       width: 100vw;
+       height: 100vh;
+       background-color: #F2E6CE;
         
     }
     .menu-container {
@@ -39,6 +41,7 @@
         width: 200px;
         height: 200px;
         margin: 20px;
+        margin-bottom: 40px;
         
     }
     main {
@@ -52,8 +55,6 @@
         background-color: white;
         
     }
-
-   
 
     .map {
         width: 300px;
@@ -115,4 +116,7 @@
         z-index: -1;
     }
 
+
+
+    
 }
