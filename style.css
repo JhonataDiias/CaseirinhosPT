@@ -14,8 +14,7 @@
 }
 
 body {
-    max-width: 90vh;
-    max-width: 500px;   
+    min-height: 100vh;   
 }
 
 
@@ -93,59 +92,6 @@ div.logo > img {
         width: 100%;
     }
 
-    
-
-    @media screen and (max-width: 700px) {
-
-        body  {
-            background-color: #F2E6CE;
-            width: 500px;
-        }
-        .menu-container {
-            flex-wrap: wrap;
-            justify-content: space-between;
-            flex-direction: column;
-            margin-top: auto;
-        }
-        header {
-            width: 100vw;
-            height: 300px;
-        }
-        
-        div.logo > img {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-            
-        }
-        main {
-            
-            width: 70vw;
-            height: 100vh;
-            background-color: white;
-            margin-left: 20px;
-            margin-right: 0px;
-            align-items: center;
-            justify-items: center;
-            margin: auto;
-        }
-
-        .map {
-            width: 70vw;
-            max-width: 70vw;
-            height: 450px;
-
-            padding: 2px;
-            
-            display: relative;
-        }
-
-        iframe {
-            width: 65vw;
-            max-width: 70vw; 
-            margin: auto;
-        }
-    }
 
 
 .map {
@@ -160,50 +106,7 @@ div.logo > img {
     z-index: 2;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
 
-.bolhas {
-    position: absolute;
-    display: flex;
-    z-index: -1;
-}
-
-.bolhas span {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    background-color: #A2F2DC ;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #A2F2DC44,
-    0 0 50px #A2F2DC, 0 0 100px #A2F2DC ;
-    animation: animar calc(150s / var(--i)) linear infinite;
-    z-index: -1;
-}
-
-@keyframes animar {
-    0% {
-        transform: translateY(100vh) scale(0)
-    }
-    100% {
-        transform: translateY(10vh) scale(1);
-    }
-}
-
-.bolhas span:nth-of-type(even) {
-    background-color: #F2A2B8;
-    box-shadow: 0 0 0 10px #F2A2B844,
-    0 0 50px #F2A2B8, 0 0 100px #F2A2B8;
-    z-index: -1;
-    
-    
-}
 
 .whats {
     position: fixed;
