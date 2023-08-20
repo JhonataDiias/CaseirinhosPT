@@ -14,10 +14,8 @@
 }
 
 body {
-    min-width: 100vh;
-    background-image: linear-gradient( to right, var(--cor3) 50%, var(--cor2));
-    overflow-x: hidden;
-    
+    max-width: 90vh;
+    max-width: 500px;   
 }
 
 
@@ -25,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 100vw;
+    width: 99vw;
     height: 120px;
     background-color: #f1235a71;
     z-index: 3;
@@ -49,10 +47,6 @@ div.logo > img {
     list-style: none;
     margin: 10px;
     padding: 10px;
-    
-
-    
-    
 }
 
 .btn {
@@ -101,7 +95,12 @@ div.logo > img {
 
     
 
-    @media (max-width: 750px) {
+    @media screen and (max-width: 700px) {
+
+        body  {
+            background-color: #F2E6CE;
+            width: 500px;
+        }
         .menu-container {
             flex-wrap: wrap;
             justify-content: space-between;
@@ -110,12 +109,12 @@ div.logo > img {
         }
         header {
             width: 100vw;
-            height: 250px;
+            height: 300px;
         }
         
         div.logo > img {
-            width: calc(60vh - 250px);
-            height: calc(60vh - 250px);
+            width: 200px;
+            height: 200px;
             margin: 20px;
             
         }
@@ -128,6 +127,7 @@ div.logo > img {
             margin-right: 0px;
             align-items: center;
             justify-items: center;
+            margin: auto;
         }
 
         .map {
@@ -164,7 +164,6 @@ div.logo > img {
     position: relative;
     width: 100%;
     height: 100vh;
-    z-index: 1;
     overflow: hidden;
     z-index: -1;
 }
@@ -206,16 +205,11 @@ div.logo > img {
     
 }
 
-main {
-    box-shadow: inset 0 0 5px var(--cor4);
-}
-
-
 .whats {
     position: fixed;
     right: 50px;
     bottom: 50px;
-    z-index: 999;
+    z-index: 9;
     animation: float 5s ease-in-out infinite;
 }
 
@@ -232,16 +226,4 @@ main {
 
 }
 
-footer {
-    display: flex;
-    width: 100vw;
-    height: 50px;
-    font-weight: bolder;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #732E07;
-    color: #F2A2B8;
-    align-items: center;
-    justify-content: center;
 
-}
