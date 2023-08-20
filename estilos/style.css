@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 650px) {
+
 * {
     padding: 0px;
     margin: 0px;
@@ -17,7 +19,6 @@ body {
     min-height: 100vh;  
     background-image: linear-gradient(to right, var(--cor1),var(--cor2)); 
     width: 100vw;
-    height: 100vh;
 }
 
 
@@ -47,8 +48,55 @@ div.logo > img {
 main {
     width: 700px;
     height: 100%;
-    background-color: #F2E6CE;
+    background-color: #ffffff;
     margin: auto;
+}
+
+.carrosel {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 3px solid #F2A2B8;
+    
+}
+
+.carrosel ul {
+display: flex;
+list-style: none;
+width: 2700px;
+height: 400px;
+}
+
+.carrosel li {
+position: relative;
+animation: slide 50s infinite ease-out;
+}
+
+@keyframes slide {
+0% {left: 0px}
+8% {left: 0px}
+11% {left: -300px}
+18% {left: -300px}
+21% {left: -600px}
+28% {left: -600px}
+31% {left: -900px}
+38% {left: -900px}
+41% {left: -1200px}
+48% {left: -1200px}
+51% {left: -1500px}
+58% {left: -1500px}
+61% {left: -1800px}
+68% {left: -1800px}
+71% {left: -2100px}
+78% {left: -2100px}
+81% {left: -2400px}
+88% {left: -2400px}
+91% {left: -2700px}
+98% {left: -2700px}
+100% {left: 0px}
 }
 
 
@@ -122,8 +170,8 @@ main {
 
 .whats {
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 40px;
+    bottom: 40px;
     z-index: 9;
     animation: float 5s ease-in-out infinite;
 }
@@ -142,3 +190,4 @@ main {
 }
 
 
+ }
