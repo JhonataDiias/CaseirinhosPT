@@ -18,7 +18,9 @@
 body {
     min-height: 100vh;  
     background-image: linear-gradient(to right, var(--cor1),var(--cor2)); 
-    width: 100vw;
+    width: 89vw;
+    text-align: center;
+    justify-items: center;
 }
 
 
@@ -26,30 +28,90 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 99vw;
-    height: 120px;
+    width: 98vw;
+    height: 140px;
     background-color: #f1235a71;
     z-index: 3;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px #f1235a71;
+    
 }
 
+ .logo {
+    display: flex;
+    width: 50vw;
+    padding: 10px;
+    margin-left: 10px;
+}
 
-div.logo > img {
-    
+.logo > img {
+    display: flex;
     width: 110px;
     height: 110px;
     border-radius: 50%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.775);
-    margin-left: 10px;
-    justify-content: center;
+    margin: 5px;
+    
+    
+    
     
 
 } 
 
 main {
     width: 700px;
-    height: 100%;
+    height: 1650px;
     background-color: #ffffff;
     margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#precos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 40px;
+    
+}
+
+div#precos > img {
+
+position: relative;
+width: 450px;
+height: 450px;
+border-radius: 10px;
+background-size: cover;
+border: 3px solid #F2A2B8 ;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+
+}
+
+#precos img:hover {
+scale: 1.2;
+transition: .5s;
+cursor: pointer;
+
+}
+
+#precos img ::before {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: inherit;
+filter: blur(25px);
+opacity: 0.5;
+z-index: 1 ;
+
+}
+
+#precos img :hover::before {
+opacity: 0;
+transition: .2s;
 }
 
 .carrosel {
@@ -95,8 +157,7 @@ animation: slide 50s infinite ease-out;
 81% {left: -2400px}
 88% {left: -2400px}
 91% {left: -2700px}
-98% {left: -2700px}
-100% {left: 0px}
+100% {left: -2700px}
 }
 
 
@@ -186,6 +247,25 @@ animation: slide 50s infinite ease-out;
     100% {
         transform: translatey(0px);
     }
+
+}
+
+footer {
+    display: flex;
+    background-color: #f1235aad;
+    box-shadow: inset 0px 5px 10px #fefcfdae;
+    width: 98vw;
+    color: white;
+    height: 100px;
+    
+}
+
+footer > div.desenvolvido {
+    display: flex;
+    margin: 70px auto;
+    color: black;
+    font-weight: bold;
+    
 
 }
 

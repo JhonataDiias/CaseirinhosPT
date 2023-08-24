@@ -17,7 +17,7 @@
 
 body  {
        display: block;
-       width: 100vw;
+       width: 90vw;
        height: 100vh;
        background-color:#F2E6CE;
        text-align: center;
@@ -31,16 +31,22 @@ body  {
         margin-top: auto;
     }
     header {
-        width: 100vw;
+        width: 96.6vw;
         height: 300px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 20px;
         background-color: #f1235a71;
-        z-index: 3; 
+        z-index: 3;
+        box-shadow: 0px 5px 10px #f1235a71; 
     }
-    
+    div.logo {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
     div.logo > img {
         width: 200px;
         height: 200px;
@@ -48,7 +54,7 @@ body  {
         margin-bottom: 40px;
         border-radius: 50%;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.775);
-        margin-left: 10px;
+        /*margin: 11px 50px;*/
         justify-content: center;
     
     }
@@ -107,24 +113,69 @@ body  {
     
     main {
         
-        width: 400px;
+        width: 90%;
+        height: 1300px;
         margin: 0 auto;
         background-color: white;
+        border-radius: 10px;
+        margin-bottom: 50px;
         
     }
+    #precos {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+            padding: 40px;
+            
+        }
+        
+    div#precos > img {
 
-    div > img {
+        position: relative;
         width: 300px;
         height: 300px;
         border-radius: 10px;
+        background-size: cover;
+        border: 3px solid #F2A2B8 ;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        
+    
     }
+
+    #precos img:hover {
+        scale: 1.25;
+        transition: .5s;
+        cursor: pointer;
+
+    }
+
+    #precos img ::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(25px);
+        opacity: 0.5;
+        z-index: 1 ;
+
+    }
+
+    #precos img :hover::before {
+        opacity: 0;
+        transition: .2s;
+    }
+
+
 
     .carrosel {
         width: 300px;
         height: 400px;
         overflow: hidden;
         margin: 50px auto;
-        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         border: 3px solid #F2A2B8;
         
@@ -139,7 +190,7 @@ body  {
 
 .carrosel li {
     position: relative;
-    animation: slide 45s infinite ease-out;
+    animation: slide 50s infinite ease-out;
 }
 
 @keyframes slide {
@@ -162,8 +213,8 @@ body  {
     81% {left: -2400px}
     88% {left: -2400px}
     91% {left: -2700px}
-    98% {left: -2700px}
-    100% {left: 0px}
+    100% {left: -2700px}
+    
 }
 
 
@@ -174,7 +225,7 @@ body  {
         width: 300px;
         max-width: 70vw;
         height: 300px;
-
+        
         padding: 2px;
         background-image: linear-gradient(to left, var(--cor4),var(--cor1));
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
@@ -187,6 +238,7 @@ body  {
         width: 295px;
         max-width: 70vw; 
         margin: auto;
+        margin-bottom: 20px;
         height: 295px;
     }
 
@@ -254,6 +306,24 @@ body  {
     
     }
 
+    footer {
+        display: flex;
+        background-color: #f1235aad;
+        box-shadow: inset 0px 5px 10px #fefcfdae;
+        width: 98vw;
+        color: white;
+        height: 100px;
+        
+    }
+    
+    footer > div.desenvolvido {
+        display: flex;
+        margin: 70px auto;
+        color: black;
+        font-weight: bold;
+        
+    
+    }
 
 
     
