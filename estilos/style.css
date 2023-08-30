@@ -240,11 +240,19 @@ transition: .2s;
 h1 {
     font-size: 1.7em;
     padding-bottom: 20px;
+    margin-bottom: 30px
 } 
+
+h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    margin-bottom: 30px;
+}
 
 h3 {
     font-size: 1.3em;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 p {
@@ -328,6 +336,7 @@ animation: slide 50s infinite ease-out;
     box-shadow: 0 0 3px var(--cor3), 0 0 10px var(--cor3);
     
     overflow: hidden;
+    z-index: 6;
 
     
 }
@@ -354,12 +363,47 @@ animation: slide 50s infinite ease-out;
         width: 100%;
     }
 
+    #preco-kit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .item-preco {
+        transition: .35s;
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #preco-kit:hover > :not(:hover) {
+        opacity: .4;
+        transform: scale(0.9);
+    }
+
     iframe {
         width: 75vw;
         max-width: 620px; 
         margin: auto;
         margin-bottom: 20px;
         height: 420px;
+    }
+    .instagram-media {
+        background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px;  height: 770px ;padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);
+        
+        } 
+
+        .instagram-media {
+            background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px;  height: 755px ;padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);
+            
+            } 
+
+    #video-insta {
+        display: block;
+        margin: auto;
+        padding: 30px;
+        margin: 50px;
+        
     }
 
 
