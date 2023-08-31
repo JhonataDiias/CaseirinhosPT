@@ -15,6 +15,10 @@
     --cor4: #732E07;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     min-height: 80vh;  
     background-image: linear-gradient(to right, var(--cor1),var(--cor2)); 

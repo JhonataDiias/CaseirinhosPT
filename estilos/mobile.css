@@ -15,6 +15,10 @@
     --cor4: #732E07;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body, html  {
        display: block;
        width: 100vw;
@@ -396,14 +400,25 @@ body, html  {
 
 #video-insta {
     display: block;
-    margin: auto;
-    padding: 30px;
+    margin: 0 auto;
+    margin-left: 1px;
     height: 500px;
+    width: 200px;
     
 }
 
 .instagram-media {
-background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; height:100%; max-height: 700px ;padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);
+background:#FFF; 
+border:0; 
+border-radius:3px; 
+box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+margin: 1px; 
+max-width:400px; 
+min-width:226px; 
+height:100%; 
+max-height: 500px ;  
+width:-webkit-calc(100% - 2px); 
+width:calc(100% - 2px);
 
 } 
 
